@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\demo",
+    "\\dist",
+    "\\lib",
+    "\\lib\\ffmpeg-emcc",
+    "\\lib\\ffmpeg-emcc\\include",
+    "\\lib\\ffmpeg-emcc\\include\\libavcodec",
+    "\\script",
+    "\\src"
+  ],
+  "SelectedNode": "\\lib\\ffmpeg-emcc\\include\\libavcodec\\avcodec.h",
+  "PreviewInSolutionExplorer": false
+}

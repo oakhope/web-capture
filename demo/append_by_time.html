@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input id="js_file" type="file">
+
+    <input id="js_time" type="number" value="1" placeholder="画面时间s">
+
+    <button id="js_button">提取</button>
+
+
+    <div id="js_info"></div>
+
+    <div id="js_result"></div>
+
+    <script src="../dist/web-capture.js"></script>
+
+    <script>
+
+        let button = document.querySelector('#js_button');
+        let resultContainer = document.querySelector('#js_result');
+        let fileInput = document.querySelector('#js_file');
+        let timeInput = document.querySelector('#js_time');
+        let infoContainer = document.querySelector('#js_info');
+
+        button.addEventListener('click', () => {
+            let file = fileInput.files[0];
+
+            let startTime = Date.now();
+
+            window.webCapture.capture(file, timeInput.value * 100, (dataURL, imageInfo) => {
+
+                const { width, height, duration } = imageInfo;
+
+                let img = new Image();
+                img.src = dataURL;
+                img.width = 300;
+                resultContainer.appendChild(img);
+                img.style.margin = '10px';
+
+                infoContainer.innerHTML = `耗时：${Date.now() - startTime}ms<br>宽度：${width}<br>高度：${height}<br>时长：${duration / 1000000}s`;
+            })
+
+        });
+    </script>
+</body>
+
+</html>

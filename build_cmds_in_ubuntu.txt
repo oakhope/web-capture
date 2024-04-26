@@ -1,0 +1,45 @@
+
+  529  cd win_d_apps
+
+  531  cd Repos
+
+  533  git clone https://github.com/jordiwang/web-capture.git
+  534  git update
+
+  536  cd web-capture/
+  537  git pull
+
+  539  npm install
+  542  npm run build
+
+  544  git clone https://github.com/emscripten-core/emsdk.git
+  545  cd emsdk/
+
+  547  git pull
+  548  ./emsdk install latest
+  549  cd ..
+  550  cd web-capture/
+  551  npm run build
+  552  sh ./script/build.sh
+  553  cd ..
+  554  cd emsdk/
+  555  ./emsdk activate latest
+  556  source ./emsdk_env.sh
+  557  vi $HOME/.bash_profile
+  558  cat $HOME/.bash_profile
+  559  cat ~/.basrc
+  560  cat ~/.bashrc
+  561  cd ..
+  562  cd web-capture/
+  563  sh ./script/build.sh
+  564  cd ..
+  565  cd web-capture/
+  566  npm run build
+  567  npm install -g npm@10.5.2
+  568  node -v
+  569  node --help
+  570  sudo apt update && sudo apt upgrade
+  571  git pull
+  572  npm run build
+  573  cd dist
+  574  vi web-capture.js

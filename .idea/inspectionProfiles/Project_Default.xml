@@ -1,0 +1,135 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CloudToolkitAbstractClassShouldStartWithAbstractNaming" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitAbstractMethodOrInterfaceMethodMustUseJavadoc" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitAvoidApacheBeanUtilsCopy" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitAvoidCallStaticSimpleDateFormat" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitAvoidCommentBehindStatement" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitAvoidComplexCondition" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitAvoidConcurrentCompetitionRandom" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitAvoidDoubleOrFloatEqualCompare" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitAvoidManuallyCreateThread" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitAvoidMissUseOfMathRandom" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitAvoidNegationOperator" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitAvoidNewDateGetTime" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitAvoidPatternCompileInMethod" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitAvoidReturnInFinally" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitAvoidStartWithDollarAndUnderLineNaming" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitAvoidUseTimer" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitBigDecimalAvoidDoubleConstructor" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitBooleanPropertyShouldNotStartWithIs" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitClassCastExceptionWithSubListToArrayList" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitClassCastExceptionWithToArray" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitClassMustHaveAuthor" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitClassNamingShouldBeCamel" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitCollectionInitShouldAssignCapacity" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitCommentsMustBeJavadocFormat" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitConcurrentExceptionWithModifyOriginSubList" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitConstantFieldShouldBeUpperCase" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitCountDownShouldInFinally" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitDontModifyInForeachCircle" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitEnumConstantsMustHaveComment" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitExceptionClassShouldEndWithException" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitIbatisMethodQueryForList" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitLowerCamelCaseVariableNaming" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitMethodReturnWrapperType" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitMethodTooLong" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitPackageNaming" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitPojoMustOverrideToString" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitPojoMustUsePrimitiveField" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitPojoNoDefaultValue" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitRemoveCommentedCode" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitServiceOrDaoClassShouldEndWithImpl" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitStringConcat" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitSwitchStatement" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitTestClassShouldEndWithTestNaming" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitThreadLocalShouldRemove" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitThreadPoolCreation" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitThreadShouldSetName" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitTransactionMustHaveRollback" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitUndefineMagicConstant" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitUnsupportedExceptionWithModifyAsList" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitUseQuietReferenceNotation" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="CloudToolkitUseRightCaseForDateFormat" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="JavaDoc" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="TOP_LEVEL_CLASS_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+          <option name="REQUIRED_TAGS" value="" />
+        </value>
+      </option>
+      <option name="INNER_CLASS_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+          <option name="REQUIRED_TAGS" value="" />
+        </value>
+      </option>
+      <option name="METHOD_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+          <option name="REQUIRED_TAGS" value="@return@param@throws or @exception" />
+        </value>
+      </option>
+      <option name="FIELD_OPTIONS">
+        <value>
+          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
+          <option name="REQUIRED_TAGS" value="" />
+        </value>
+      </option>
+      <option name="IGNORE_DEPRECATED" value="false" />
+      <option name="IGNORE_JAVADOC_PERIOD" value="true" />
+      <option name="IGNORE_DUPLICATED_THROWS" value="false" />
+      <option name="IGNORE_POINT_TO_ITSELF" value="false" />
+      <option name="myAdditionalJavadocTags" value="date" />
+    </inspection_tool>
+    <inspection_tool class="JavadocDeclaration" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ADDITIONAL_TAGS" value="date" />
+    </inspection_tool>
+    <inspection_tool class="MissingJavadoc" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="PACKAGE_SETTINGS">
+        <Options>
+          <option name="ENABLED" value="false" />
+        </Options>
+      </option>
+      <option name="MODULE_SETTINGS">
+        <Options>
+          <option name="ENABLED" value="false" />
+        </Options>
+      </option>
+      <option name="TOP_LEVEL_CLASS_SETTINGS">
+        <Options>
+          <option name="ENABLED" value="false" />
+        </Options>
+      </option>
+      <option name="INNER_CLASS_SETTINGS">
+        <Options>
+          <option name="ENABLED" value="false" />
+        </Options>
+      </option>
+      <option name="METHOD_SETTINGS">
+        <Options>
+          <option name="REQUIRED_TAGS" value="@return@param@throws or @exception" />
+          <option name="ENABLED" value="false" />
+        </Options>
+      </option>
+      <option name="FIELD_SETTINGS">
+        <Options>
+          <option name="ENABLED" value="false" />
+        </Options>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="3">
+            <item index="0" class="java.lang.String" itemvalue="hyperframe" />
+            <item index="1" class="java.lang.String" itemvalue="h2" />
+            <item index="2" class="java.lang.String" itemvalue="hpack" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input id="js_file" type="file">
+
+    <input id="js_time" type="number" value="1" placeholder="画面时间s">
+
+    <button id="js_button">提取</button>
+
+
+    <div id="js_info"></div>
+
+    <div id="js_result"></div>
+
+    <script src="../dist/web-capture.js"></script>
+
+    <script>
+
+        let button = document.querySelector('#js_button');
+        let resultContainer = document.querySelector('#js_result');
+        let fileInput = document.querySelector('#js_file');
+        let timeInput = document.querySelector('#js_time');
+        let infoContainer = document.querySelector('#js_info');
+
+        function capture(file, duration, curTime) {
+            if (curTime <= duration) {
+                ((curTimeMs) => {
+                    window.webCapture.capture(file, curTimeMs, (dataURL, imageInfo) => {
+                        console.log("curTime", curTimeMs)
+
+                        const img = document.createElement('img');
+                        img.src = dataURL;
+                        img.width = 200;
+                        img.style.margin = '10px';
+                        img.alt = `${curTimeMs}`;
+                        resultContainer.appendChild(img);
+
+                        if (curTimeMs <= duration) {
+                            capture(file, duration, curTimeMs + 500);
+                        }
+
+                    });
+                })(curTime);
+            }
+        }
+
+        button.addEventListener('click', () => {
+            let file = fileInput.files[0];
+
+            let startTime = Date.now();
+
+            window.webCapture.capture(file, 1, (dataURL, imageInfo) => {
+
+                // const { width, height, duration, total_frames, frame_rate } = imageInfo;
+                const { width, height, duration } = imageInfo;
+
+                resultContainer.innerHTML = `<img src="${dataURL}" width="500" />`
+
+                infoContainer.innerHTML = `耗时：${Date.now() - startTime}ms
+<br>宽度：${width}
+<br>高度：${height}
+<br>时长：${duration / 1000000}s
+<br>duration：${duration}ms
+`;
+                // infoContainer.innerHTML = `耗时：${Date.now() - startTime}ms<br>宽度：${width}<br>高度：${height}<br>时长：${duration / 1000000}s`;
+                // infoContainer.innerHTML = `耗时：${Date.now() - startTime}ms<br>宽度：${width}<br>高度：${height}<br>时长：${duration / 1000000}s 帧数：${total_frames} 帧率：${frame_rate}fps`;
+                // 帧率：${total_frames / (duration / 1000000)}fps
+                capture(file, duration/1000, 1000);
+            })
+
+        });
+    </script>
+</body>
+
+</html>
