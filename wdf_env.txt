@@ -1,0 +1,46 @@
+PATH =
+/mnt/d/data/apps/Repos/emsdk
+/mnt/d/data/apps/Repos/emsdk/upstream/emscripten
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+/sbin
+/bin
+/usr/games
+/usr/local/games
+/usr/lib/wsl/lib
+/mnt/d/dev/depot_tools
+/mnt/d/Program Files/Python312/Scripts/
+/mnt/d/Program Files/Python312/
+/mnt/d/Program Files/nodejs/
+/mnt/d/Program Files/Go
+/mnt/d/Program Files/Go/bin
+/mnt/d/Users/yqw/anaconda3
+/mnt/d/Users/yqw/anaconda3/Library/mingw-w64/bin
+/mnt/d/Users/yqw/anaconda3/Library/usr/bin
+/mnt/d/Users/yqw/anaconda3/Library/bin
+/mnt/d/Users/yqw/anaconda3/Scripts
+/mnt/d/Users/yqw/AppData/Local/Programs/Microsoft VS Code/bin
+/mnt/d/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.3/bin
+/mnt/d/dev/ffmpeg-2023-11-28-git-47e214245b-full_build/bin
+/mnt/d/dev/opencv/build/x64/vc16/bin
+/mnt/d/dev/sqlite
+/mnt/d/dev/chrome/chromedriver-win64
+/mnt/d/Program Files/Oracle/VirtualBox
+/mnt/d/dev/dotnet
+/mnt/d/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE
+/snap/bin
+
+
+
+
+
+
+EMSDK = /mnt/d/data/apps/Repos/emsdk
+
+
+
+
+
+EMSDK_NODE = /mnt/d/data/apps/Repos/emsdk/node/16.20.0_64bit/bin/node
